@@ -10,11 +10,13 @@ import { environment } from './../environments/environment';
 
 
 import { AppComponent } from './app.component';
+import { CoursesListComponent } from './courses-list/courses-list.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CoursesListComponent
   ],
   imports: [
     BrowserModule,
