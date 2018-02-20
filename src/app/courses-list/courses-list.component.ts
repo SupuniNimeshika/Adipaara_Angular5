@@ -15,7 +15,8 @@ export class CoursesListComponent implements OnInit {
     this.coursesObservable = this.getCourses('/Courses');
   }
 
-  getCourses(listPath): Observable<any[]>{
+  getCourses(listPath): Observable<any[]>
+  {
     return this.db.list(listPath).valueChanges();
   }
 }
